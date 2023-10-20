@@ -134,11 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &374714237 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4063477965504149408, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
-  m_PrefabInstance: {fileID: 1529039984}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &615651066
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,49 +252,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &655790974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2058509301040796113, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
-  m_PrefabInstance: {fileID: 1529039984}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &655790985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655790974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57b77a022f6e26d46a22ba6b2cc1bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftTeleportation: {fileID: 374714237}
-  rightTeleportation: {fileID: 1313123572}
-  leftActivate:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Left Activate
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 803954d7-b1a8-4070-8bc2-6386406fed25
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rightActivate:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Activate
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 7ea9b3e8-a529-4039-92e3-bdde0b4aed37
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &885284213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -576,11 +528,6 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1313123572 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7319910007512001478, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
-  m_PrefabInstance: {fileID: 1529039984}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1529039984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -636,10 +583,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2058509301040796113, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 655790985}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
 --- !u!1 &1796937517
 GameObject:

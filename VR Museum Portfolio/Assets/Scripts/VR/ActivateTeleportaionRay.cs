@@ -13,7 +13,10 @@ public class ActivateTeleportaionRay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        leftTeleportation.SetActive(leftActivate.action.ReadValue<float>() > 0.1f);
-        rightTeleportation.SetActive(rightActivate.action.ReadValue<float>() > 0.1f);
+        bool isLeftTriggerPressed = leftActivate.action.ReadValue<float>() > 0.1f;
+        bool isRightTriggerPressed = rightActivate.action.ReadValue<float>() > 0.1f;
+
+        leftTeleportation.SetActive(isLeftTriggerPressed);
+        rightTeleportation.SetActive(isRightTriggerPressed);
     }
 }

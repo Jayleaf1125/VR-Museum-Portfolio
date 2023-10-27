@@ -305,6 +305,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5fbe6ce5a50a1346afb99cf8c117143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &24028600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2058509301040796113, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
+  m_PrefabInstance: {fileID: 24028598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,10 +645,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 540076340381939803, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0176a19a574ff954b97fdfcbea493301, type: 2}
     - target: {fileID: 4875522558191313171, guid: 880883e369605c447a38fca25a24fb86, type: 3}
       propertyPath: m_Name
       value: World Transition Portals
       objectReference: {fileID: 0}
+    - target: {fileID: 5772119825100382717, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772119825100382717, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.62566847
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772119825100382717, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772119825100382717, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772119825100382717, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.33305168
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772119825100382717, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755935963328239868, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: m_text
+      value: Playground World
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631647965702013051, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: vrAvatar
+      value: 
+      objectReference: {fileID: 24028600}
     - target: {fileID: 8631647965702013051, guid: 880883e369605c447a38fca25a24fb86, type: 3}
       propertyPath: fadeScreen
       value: 

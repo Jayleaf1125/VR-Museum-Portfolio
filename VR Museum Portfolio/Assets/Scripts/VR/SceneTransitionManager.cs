@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneTransitionManager : MonoBehaviour
 {
     public FadeScreen fadeScreen;
+    public GameObject vrAvatar;
 
     /*
     public void GoToScene(int sceneIndex)
@@ -35,6 +36,7 @@ public class SceneTransitionManager : MonoBehaviour
         // Launch the new scene
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
         operation.allowSceneActivation = false;
+        // vrAvatar.SetActive(false);
 
         float timer = 0f;
 
@@ -45,5 +47,6 @@ public class SceneTransitionManager : MonoBehaviour
         }
 
         operation.allowSceneActivation = true;
+        // vrAvatar.SetActive(true);
     }
 }

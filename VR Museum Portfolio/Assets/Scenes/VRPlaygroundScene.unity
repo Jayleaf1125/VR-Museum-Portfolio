@@ -1443,12 +1443,17 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &682168120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2058509301040796113, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
+  m_PrefabInstance: {fileID: 1529039984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &683675953 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7497471005940219268, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
   m_PrefabInstance: {fileID: 1529039984}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 682168120}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2213c36610e3b1c4bbf886810ed9db12, type: 3}
@@ -1459,7 +1464,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6918058783939269555, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
   m_PrefabInstance: {fileID: 1529039984}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 682168120}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
@@ -2544,10 +2549,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 891365031467932885, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1182715251391969063, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
       propertyPath: m_Name
       value: Default XR Rig
@@ -2592,14 +2593,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3719617175099981696, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 8838908009515942202, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
-      propertyPath: fadeScreen
-      value: 
-      objectReference: {fileID: 851078892}
     - target: {fileID: 8838908009515942202, guid: 25f0cc3cc640de743b3025bad9fb1760, type: 3}
       propertyPath: sceneTransitionManager
       value: 
@@ -3210,10 +3203,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 540076340381939803, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 065282c185a5b554897040dd3faef98a, type: 2}
     - target: {fileID: 4875522558191313171, guid: 880883e369605c447a38fca25a24fb86, type: 3}
       propertyPath: m_Name
       value: World Transition Portals
       objectReference: {fileID: 0}
+    - target: {fileID: 8631647965702013051, guid: 880883e369605c447a38fca25a24fb86, type: 3}
+      propertyPath: vrAvatar
+      value: 
+      objectReference: {fileID: 682168120}
     - target: {fileID: 8631647965702013051, guid: 880883e369605c447a38fca25a24fb86, type: 3}
       propertyPath: fadeScreen
       value: 

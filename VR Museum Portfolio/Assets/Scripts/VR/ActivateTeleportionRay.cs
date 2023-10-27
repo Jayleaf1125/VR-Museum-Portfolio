@@ -6,8 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ActivateTeleportaionRay : MonoBehaviour
 {
-    public GameObject leftTeleportation;
-    public GameObject rightTeleportation;
+    public GameObject leftTeleportationRay;
+    public GameObject rightTeleportationRay;
 
     public InputActionProperty leftActivate;
     public InputActionProperty rightActivate;
@@ -15,8 +15,8 @@ public class ActivateTeleportaionRay : MonoBehaviour
     public InputActionProperty leftCancel;
     public InputActionProperty rightCancel;
 
-    public XRRayInteractor leftRay;
-    public XRRayInteractor rightRay;
+    public XRRayInteractor leftGrabRay;
+    public XRRayInteractor rightGrabRay;
 
     // Update is called once per frame
     void Update()
@@ -30,11 +30,11 @@ public class ActivateTeleportaionRay : MonoBehaviour
         bool isLeftTriggerCanceled = leftCancel.action.ReadValue<float>() < 0.1f;
         bool isRightTriggerCanceled = rightCancel.action.ReadValue<float>() < 0.1f;
 
-        bool isLeftRayHovering = leftRay.TryGetHitInfo(out Vector3 leftPosition, out Vector3 leftNormal, out int leftNumber, out bool leftValid);
-        bool isRightRayHovering = rightRay.TryGetHitInfo(out Vector3 rightPosition, out Vector3 rightNormal, out int rightNumber, out bool rightValid);
+        bool isLeftGrabRayHovering = leftGrabRay.TryGetHitInfo(out Vector3 leftPosition, out Vector3 leftNormal, out int leftNumber, out bool leftValid);
+        bool isRightGrabRayHovering = rightGrabRay.TryGetHitInfo(out Vector3 rightPosition, out Vector3 rightNormal, out int rightNumber, out bool rightValid);
 
-        leftTeleportation.SetActive(!isLeftRayHovering && isLeftTriggerCanceled && isLeftTriggerPressed);
-        rightTeleportation.SetActive(!isRightRayHovering && isRightTriggerCanceled && isRightTriggerPressed);
+        leftTeleportationRay.SetActive(!isLeftGrabRayHovering && isLeftTriggerCanceled && isLeftTriggerPressed);
+        rightTeleportationRay.SetActive(!isRightGrabRayHovering && isRightTriggerCanceled && isRightTriggerPressed);
 
     }
 }

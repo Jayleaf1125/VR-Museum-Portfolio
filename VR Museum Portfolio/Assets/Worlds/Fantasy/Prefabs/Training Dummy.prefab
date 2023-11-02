@@ -111,6 +111,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3600085521287191609}
+  - component: {fileID: 7200600184227018517}
+  - component: {fileID: 1758929001378712301}
+  - component: {fileID: 3295305251293316964}
+  - component: {fileID: 7972178268605262398}
   m_Layer: 0
   m_Name: Training Dummy
   m_TagString: Untagged
@@ -133,40 +137,70 @@ Transform:
   m_Children:
   - {fileID: 5481717606413442289}
   - {fileID: 902267562373454726}
-  - {fileID: 5904771646064982116}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &4899026864009763225
-GameObject:
+--- !u!136 &7200600184227018517
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5904771646064982116}
-  m_Layer: 0
-  m_Name: Spawn Point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5904771646064982116
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4899026864009763225}
+  m_GameObject: {fileID: 4780354058146477494}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3600085521287191609}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1758929001378712301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780354058146477494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d921dfadf6fd7e044ac7bbe1c72e13e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 10
+  maxHealth: 10
+--- !u!114 &3295305251293316964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780354058146477494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741bb1a287a8b0f48954ba31d4cf1e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 4780354058146477494}
+--- !u!114 &7972178268605262398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780354058146477494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e559f42acd2d2ff4fb112fd7da74d359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5271279321089691455
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,7 +347,6 @@ GameObject:
   - component: {fileID: 9131268839152630552}
   - component: {fileID: 7586575558607226634}
   - component: {fileID: 5239080982029440912}
-  - component: {fileID: 7198604603278186259}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: TrainingDummy
@@ -409,18 +442,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7198604603278186259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6530395485926074815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 715007da3100a44488eed8d4aaa0367d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trainingDummy: {fileID: 4780354058146477494}
-  currentHealth: 100
-  maxHealth: 100

@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeScreen: {fileID: 0}
+  vrAvatar: {fileID: 0}
 --- !u!1 &8568331894784977780
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fantasy World
+  m_text: Playground World
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -389,6 +390,30 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1980155244477355534, guid: f594bd57530621242b2ffe4a2924b8a7, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980155244477355534, guid: f594bd57530621242b2ffe4a2924b8a7, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.62566847
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980155244477355534, guid: f594bd57530621242b2ffe4a2924b8a7, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980155244477355534, guid: f594bd57530621242b2ffe4a2924b8a7, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980155244477355534, guid: f594bd57530621242b2ffe4a2924b8a7, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.33305168
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980155244477355534, guid: f594bd57530621242b2ffe4a2924b8a7, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3322139730879444685, guid: f594bd57530621242b2ffe4a2924b8a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.94
@@ -433,6 +458,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 5485067978026569640, guid: f594bd57530621242b2ffe4a2924b8a7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0176a19a574ff954b97fdfcbea493301, type: 2}
     - target: {fileID: 9051098875540764265, guid: f594bd57530621242b2ffe4a2924b8a7, type: 3}
       propertyPath: m_Name
       value: Portal

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 
+// Credit to FistFullOfShrimp -> (https://fistfullofshrimp.com/unity-vr-controller-data/)
 public class InputData : MonoBehaviour
 {
     public InputDevice rightController;

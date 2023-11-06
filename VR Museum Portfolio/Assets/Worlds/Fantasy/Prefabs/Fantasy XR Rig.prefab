@@ -5244,7 +5244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae093f019a75854ba0af620c4c88d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: 
+  playerName: Evan
 --- !u!114 &3193325294401221180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5257,8 +5257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d921dfadf6fd7e044ac7bbe1c72e13e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 0
+  currentHealth: 100
+  maxHealth: 100
 --- !u!114 &5389396027120309736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5271,8 +5271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab7f03c4c00ac624fa15192e290f3e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentMana: 0
-  maxMana: 0
+  currentMana: 15
+  maxMana: 15
 --- !u!114 &5607081360034549086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5288,8 +5288,6 @@ MonoBehaviour:
   level: 0
   currentExpAmount: 0
   maxExp: 0
-  healthbar: {fileID: 0}
-  manabar: {fileID: 0}
 --- !u!1 &6073570424787757185
 GameObject:
   m_ObjectHideFlags: 0

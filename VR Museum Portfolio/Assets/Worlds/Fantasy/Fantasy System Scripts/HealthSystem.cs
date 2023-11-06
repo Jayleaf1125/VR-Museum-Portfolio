@@ -21,7 +21,7 @@ public class HealthSystem : MonoBehaviour
                     return;
                 }
 
-                currentHealth -= num;
+                currentHealth = updatedHealth;
 
                 break;
             case "heal":
@@ -33,7 +33,7 @@ public class HealthSystem : MonoBehaviour
                     return;
                 }
 
-                currentHealth += num;
+                currentHealth = updatedHealth2;
                 break;
         }
     }

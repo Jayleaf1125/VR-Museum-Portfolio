@@ -6,7 +6,7 @@ public class ManaSystem : MonoBehaviour
 {
     public int currentMana;
     public int maxMana;
-    private int? overdrive = null; // To allow the player to tempoaray increase their max mana
+    // private int? overdrive = null; // To allow the player to tempoaray increase their max mana
 
     public void UpdateMana(int num, string statement)
     {

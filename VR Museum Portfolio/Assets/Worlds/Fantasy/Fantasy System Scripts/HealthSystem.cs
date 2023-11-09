@@ -6,7 +6,7 @@ public class HealthSystem : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
-    private int? shield = null;
+    // private int? shield = null;
 
     public void UpdateHealth(int num, string statement)
     {
@@ -47,6 +47,5 @@ public class HealthSystem : MonoBehaviour
     {
         Debug.Log("You died, get your ass up");
         currentHealth = maxHealth;
-        Destroy(gameObject);
     }
 }

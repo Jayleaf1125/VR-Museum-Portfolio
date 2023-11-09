@@ -10,7 +10,7 @@ public class OnMeleeWeaponCollision : MonoBehaviour
     public new GameObject gameObject;
     private HealthSystem healthBar;
     private InputData inputData;
-    private MeleeWeaponSystem meleeWeaponSystem;
+    private MeleeWeaponSystem meleeWeapon;
 
     private void Start()
     {
@@ -26,43 +26,45 @@ public class OnMeleeWeaponCollision : MonoBehaviour
         switch (otherTag)
         {
             case "Blade":
-                WeaponPartHit(meleeWeaponSystem.bladeDamage); 
+                WeaponPartHit(meleeWeapon.bladeDamage, "blade"); 
                 break;
             case "Guard":
-                WeaponPartHit(meleeWeaponSystem.guardDamage);
+                WeaponPartHit(meleeWeapon.guardDamage, "guard");
                 break;
             case "Hilt":
-                WeaponPartHit(meleeWeaponSystem.hiltDamage);
+                WeaponPartHit(meleeWeapon.hiltDamage, "hilt");
                 break;
         }
     }
 
-    private void WeaponPartHit(int damage) 
+    private void WeaponPartHit(int damage, string weaponPart) 
     {
+        InputDevice leftControllertData = inputData.leftController;
+        InputDevice rightControllertData = inputData.rightController;
 
-            if (inputData.leftController.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 leftVelocity))
+        if (leftControllertData.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 leftVelocity))
+        {
+            if (leftVelocity.magnitude > 3.0f)
             {
-                if (leftVelocity.magnitude > 3.0f)
-                {
-                    healthBar.UpdateHealth(damage, "damage");
-                }
-                else
-                {
-                    Debug.Log("Hit harder");
-                }
+                healthBar.UpdateHealth(damage, "damage");
             }
+            else
+            {
+                Debug.Log(String.Format("You need to swing you {0} harder", weaponPart));
+            }
+        }
 
-            if (inputData.rightController.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 rightVelocity))
+        if (rightControllertData.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 rightVelocity))
+        {
+            if (rightVelocity.magnitude > 3.0f)
             {
-                if (rightVelocity.magnitude > 3.0f)
-                {
-                    healthBar.UpdateHealth(damage, "damage");
-                }
-                else
-                {
-                    Debug.Log("Hit harder");
-                }
+                healthBar.UpdateHealth(damage, "damage");
             }
+            else
+            {
+                Debug.Log(String.Format("You need to swing you {0} harder", weaponPart));
+            }
+        }
     }
 
     private void GetParent(Collider other)
@@ -77,7 +79,7 @@ public class OnMeleeWeaponCollision : MonoBehaviour
             // Check if the parentTransform is not null
             if (parentTransform != null)
             {
-                meleeWeaponSystem = parentTransform.GetComponent<MeleeWeaponSystem>();
+                meleeWeapon = parentTransform.GetComponent<MeleeWeaponSystem>();
             }
             else
             {

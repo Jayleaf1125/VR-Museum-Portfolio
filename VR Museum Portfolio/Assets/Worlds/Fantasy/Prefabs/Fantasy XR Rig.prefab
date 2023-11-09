@@ -5210,6 +5210,7 @@ GameObject:
   - component: {fileID: 3193325294401221180}
   - component: {fileID: 5389396027120309736}
   - component: {fileID: 5607081360034549086}
+  - component: {fileID: 1323246641380489150}
   m_Layer: 0
   m_Name: Player System Manager
   m_TagString: Untagged
@@ -5288,6 +5289,21 @@ MonoBehaviour:
   level: 0
   currentExpAmount: 0
   maxExp: 0
+--- !u!114 &1323246641380489150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042282785713788946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a18a2571ec3394c81525deb9395694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 2
+  intelligence: 1
+  vitality: 5
 --- !u!1 &6073570424787757185
 GameObject:
   m_ObjectHideFlags: 0

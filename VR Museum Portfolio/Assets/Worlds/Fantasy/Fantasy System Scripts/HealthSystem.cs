@@ -7,6 +7,22 @@ public class HealthSystem : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
     // private int? shield = null;
+    private Renderer renderer;
+    private Material originalMat;
+    public Material newMat;
+
+    private void Awake()
+    {
+        renderer = GetComponent<Renderer>();
+        if( renderer != null )
+        {
+            originalMat = renderer.material;
+            Debug.Log("Renderer Exist");
+        } else
+        {
+            Debug.Log("No renderer exist");
+        }
+    }
 
     public void UpdateHealth(int num, string statement)
     {
@@ -46,6 +62,20 @@ public class HealthSystem : MonoBehaviour
     private void onDeathHealthReset()
     {
         Debug.Log("You died, get your ass up");
+        StartCoroutine(ChangeMaterialForDuration(2f));
         currentHealth = maxHealth;
+    }
+
+    // Changing Material
+    IEnumerator ChangeMaterialForDuration(float duration)
+    {
+        ChangeMaterial(newMat);
+        yield return new WaitForSeconds(duration);
+        ChangeMaterial(originalMat);
+    }
+
+    void ChangeMaterial(Material material)
+    {
+        renderer.material = material;
     }
 }
